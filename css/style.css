@@ -69,13 +69,25 @@ header{
 /* /header */
 
 /* main section */
+.intro-overlay {
+    position: absolute;
+    top: 0;
+    left: 7px;
+    width: 98vw;
+    min-height: 90vh;
+    margin-top: 87px;
+    background: linear-gradient(135deg,#208379 20%,#051514 80%);
+    opacity: .85;
+    z-index: -1;
+}
 .main-section{
     display: inline-block;
-    background: #000 url('../images/icon-bg.jpg');
+    background:url('../images/icon-bg.jpg') #000;
+    opacity: 0.9;
     background-size: cover;
     width: 98vw;
     min-height: 90vh;
-    margin-top: 90px;
+    margin-top: 80px;
     left: 0;
     top: 0;
 }
@@ -337,7 +349,7 @@ h3, .h03 {
     color: white;
     position: relative;
 }
-#services .overlay {
+#services .service-overlay {
     top: 0;
     left: 0;
     position: absolute;
@@ -387,17 +399,54 @@ p.lead {
     color: #888888;
 }
 .services-content {
+    position: relative;
     max-width: 1200px;
     width: 94%;
     max-width: 1140px;
     margin: 0 auto;
 }
 .services-list {
-    opacity: 1;
-    display: inline-block;
+    display: flex;
+    float: left;
     position: relative;
     width: 100%;
+    left: 0;
     margin-top: 1.2rem;
     text-align: center;
+}
+
+.services-list .service-i {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 1.2rem;
+    padding: 0 30px;
+}
+.services-list .icon {
+    display: inline-block;
+    margin-bottom: 2.1rem;
+}
+.services-list i.fa {
+    font-size: 4.4rem;
+    color: #fff;
+    position: relative;
+    background: #fed136;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    padding: auto 0;
+}
+.services-list .service-i h3 {
+    color: #FFFFFF;
+    font-family: "poppins-semibold", sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.25;
+    margin-bottom: 1.2rem;
+}
+.services-list .service-i p {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "lora-regular", serif;
+    font-size: 1.6rem;
+    line-height: 1.8;
 }
 /* /services section */

@@ -1,0 +1,109 @@
+
+.intro-social {
+    list-style: none; /* Remove default list styles */
+    display: flex; /* Arrange the list items in a row */
+    justify-content: center; /* Center the list items horizontally */
+    padding: 0; /* Remove default padding */
+}
+
+.intro-social li {
+    margin: 0 30px; /* Add some horizontal margin between the list items */
+}
+
+.intro-social a {
+    color: white; /* Set the color of the links */
+    text-decoration: none; /* Remove the underline from the links */
+    font-size: 40px; /* Set the font size of the links */
+}
+
+.intro-social a:hover {
+    color: #fed136; /* Change the color of the links when hovered over */
+}
+
+/* Existing CSS */
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ... rest of your CSS ... */
+
+.menu a:hover{
+    color: #efb6df;
+}
+
+/* Responsive CSS for 350px < page < 720px */
+
+@media (min-width: 350px) and (max-width: 720px) {
+    .container {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .menus {
+        text-align: center;
+    }
+
+    .menus .menu {
+        margin-left: 10px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+}
+
+/* Existing CSS */
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+/* ... rest of your CSS ... */
+
+.menu a:hover{
+    color: #efb6df;
+}
+
+/* Responsive CSS for 720px < page < 950px */
+
+@media (min-width: 720px) and (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 0 15px;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menus {
+        text-align: center;
+        width: 100%;
+    }
+
+    .menus .menu {
+        margin-left: 20px;
+    }
+
+    .menu a {
+        font-size: 10px;
+    }
+}

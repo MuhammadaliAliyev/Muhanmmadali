@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muhammadali's portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="shortcut icon" href="images/logo-no-background.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -23,7 +24,7 @@
                 <li class="menu"><a href="#main-section">Asosiy</a></li>
                 <li class="menu"><a href="#about-section">Men haqimda</a></li>
                 <li class="menu"><a href="#services">Xizmatlar</a></li>
-                <li class="menu"><a href="#">Portfolio</a></li>
+                <li class="menu"><a href="#portfolio">Portfolio</a></li>
                 <li class="menu"><a href="#">Blog</a></li>
             </ul>
         </div>
@@ -32,6 +33,7 @@
     <!-- main section
     ============================-->
     <section id="main-section" class="main-section">
+        <div class="intro-overlay"></div>
         <div class="main-section__text">
             <h5>Assalomu alaykum!</h5>
             <h1>Men Muhammadali</h1>
@@ -39,7 +41,13 @@
                 <span>O`zbekistondagi dasturchi</span><br>
                 <span>Portfolioga xush kelibsiz!</span>
             </p>
-        </div>    
+        </div>
+        <ul class="intro-social">        
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa fa-github"></i></a></li>
+         </ul> <!-- /intro-social -->   
     </section><!-- /main section -->
 
     <!-- about section
@@ -150,7 +158,7 @@
     <!-- services section
     ============================= -->
     <section id="services">
-        <div class="overlay"></div>
+        <div class="service-overlay"></div>
         <div class="services-intro">
             <div class="services-header">
                 <h5>Xizmatlar</h5>
@@ -159,38 +167,59 @@
             </div>            
         </div><!-- /services intro -->
         <div class="services-content">
-            <div class="services-list">
+            <div class="services-list" style=" opacity: 1;">
                 <div class="service">
-                    <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
-                </div>
-                <div class="service-content">
-                    <h3>Veb-ilovalarni ishlab chiqish</h3>
-                    <p class="desc">
-                        G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
-                    </p>
-                </div>
-                <div class="service">
-                    <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
-                </div>
-                <div class="service-content">
-                    <h3>Veb-ilovalarni ishlab chiqish</h3>
-                    <p class="desc">
-                        G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
-                    </p>
+                    <div class="service-i">
+                        <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h3>Veb-ilovalarni ishlab chiqish</h3>
+                        <p class="desc">
+                            G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
+                        </p>
+                    </div>
                 </div>
                 <div class="service">
-                    <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
+                    <div class="service-i">
+                        <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h3>Veb-ilovalarni ishlab chiqish</h3>
+                        <p class="desc">
+                            G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
+                        </p>
+                    </div>
                 </div>
-                <div class="service-content">
-                    <h3>Veb-ilovalarni ishlab chiqish</h3>
-                    <p class="desc">
-                        G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
-                    </p>
+                <div class="service">
+                    <div class="service-i">
+                        <span class="icon"><i class="fa fa-code fa-stack-1x fa-inverse"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h3>Veb-ilovalarni ishlab chiqish</h3>
+                        <p class="desc">
+                            G'oyalaringizni hayotga tatbiq etadigan tezkor va qiziqarli ilovalar.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
 
     </section>
     <!-- /services section -->
+    <!-- portfolio section 
+    ================================= -->
+    <section id="portfolio">
+        <div class="section-intro">
+            <div class="portfolio-header">
+                <h5>Portfolio</h5>
+                <h1>Check out Sime of my Works</h1>
+                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus ipsam expedita quis accusantium, mollitia, minus consequuntur accusamus labore consequatur et esse nobis sequi quibusdam quidem dolorum totam dolores harum quam!</p> 
+            </div>
+        </div>
+        <div class="portfolio-content">
+            
+        </div>
+    </section>
+    <!-- /portfolio section -->
 </body>
 </html>

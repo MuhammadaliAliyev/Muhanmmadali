@@ -1,109 +1,73 @@
-
-.intro-social {
-    list-style: none; /* Remove default list styles */
-    display: flex; /* Arrange the list items in a row */
-    justify-content: center; /* Center the list items horizontally */
-    padding: 0; /* Remove default padding */
-}
-
-.intro-social li {
-    margin: 0 30px; /* Add some horizontal margin between the list items */
-}
-
-.intro-social a {
-    color: white; /* Set the color of the links */
-    text-decoration: none; /* Remove the underline from the links */
-    font-size: 40px; /* Set the font size of the links */
-}
-
-.intro-social a:hover {
-    color: #fed136; /* Change the color of the links when hovered over */
-}
-
-/* Existing CSS */
-
-.container{
-    width: 1140px;
-    margin: 0 auto;
-}
-
-/* ... rest of your CSS ... */
-
-.menu a:hover{
-    color: #efb6df;
-}
-
-/* Responsive CSS for 350px < page < 720px */
-
-@media (min-width: 350px) and (max-width: 720px) {
-    .container {
-        width: 100%;
-        padding: 0 15px;
+@media only screen and (max-width: 950px) {
+    .logo img{
+        padding-bottom: 18px;
     }
-
-    header {
-        flex-direction: column;
-        height: auto;
-    }
-
-    .logo img {
-        width: 50px;
-        height: 50px;
-    }
-
     .menus {
-        text-align: center;
+        display: none;
     }
-
-    .menus .menu {
-        margin-left: 10px;
+    .menus1 {
+        display: inline-block;
+        list-style: none;
+        text-align:center;
+        padding: 5px;
+        border-radius: 10px;
     }
-
-    .menu a {
-        font-size: 10px;
+    .menus1 .menu1 {
+        position: relative; /* Add this to position the dropdown menu */
+    }
+    .menu1 p{
+        color: #05364B;
+        font-size: 120%;
+        font-weight: 500;
+    }
+    
+    .menu1 ul {
+        list-style: none;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        display: none;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    
+    .menu1 ul li {
+        padding: 10px;
+    }
+    
+    .menu1 ul li a {
+        color: #05364B;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .menu1 ul li a:hover {
+        color: #efb6df;
+    }
+    
+    .menu1:hover p{
+        background-color: #fed136;
+        padding: 2px;
+        border-radius: 3px;
+        color: #fff;
+    }
+    .menu1:hover ul {
+        display: block;
     }
 }
 
-/* Existing CSS */
-
-.container{
-    width: 1140px;
-    margin: 0 auto;
-}
-
-/* ... rest of your CSS ... */
-
-.menu a:hover{
-    color: #efb6df;
-}
-
-/* Responsive CSS for 720px < page < 950px */
-
-@media (min-width: 720px) and (max-width: 950px) {
-    .container {
-        width: 90%;
-        padding: 0 15px;
+@media only screen and (max-width: 768px){
+    .menus1 {
+        width: 15%;
+        margin-left: 5vw;
     }
-
-    header {
-        flex-wrap: wrap;
+    .main-section__text h5 {
+        font-size: 1.5rem;
     }
-
-    .logo img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .menus {
-        text-align: center;
-        width: 100%;
-    }
-
-    .menus .menu {
-        margin-left: 20px;
-    }
-
-    .menu a {
-        font-size: 10px;
+    .main-section__text h1 {
+        font-size: 3.5rem;
     }
 }

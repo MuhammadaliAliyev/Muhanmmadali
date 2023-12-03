@@ -11,6 +11,8 @@
         text-align:center;
         padding: 5px;
         border-radius: 10px;
+        width: 15%;
+        margin-left: 5vw;
     }
     .menus1 .menu1 {
         position: relative; /* Add this to position the dropdown menu */
@@ -60,14 +62,33 @@
 }
 
 @media only screen and (max-width: 768px){
-    .menus1 {
-        width: 15%;
-        margin-left: 5vw;
-    }
+
     .main-section__text h5 {
         font-size: 1.5rem;
     }
     .main-section__text h1 {
         font-size: 3.5rem;
+    }
+    .about-info{
+        width:80%;
+        float: none;
+    }
+    #resume .timeline-header{
+        float:none;
+        width: 70%;
+    }
+    #resume .timeline-content {
+        width: 75%;
+        padding: 0 75px;
+        margin-left: 5%;
+    }
+    .services-list{
+        display: inline-block;
+    }
+    .services-list .service-i{
+        margin-bottom: -2rem;
+    }
+    .service-content {
+        margin-bottom: 3rem;
     }
 }

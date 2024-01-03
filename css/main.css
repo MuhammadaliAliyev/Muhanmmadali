@@ -1107,7 +1107,7 @@ header{
     vertical-align: middle;
     width: 75px;
     height: 75px;
-    margin: 2px 5px;
+    margin: 2px 4px;
 }
 .logo{
     display: inline-block;
@@ -1149,14 +1149,14 @@ header{
 .menu a:hover{
     color: #efb6df;
 }
-.menus1{
+.navbar-nav{
     display: none;
 }
 .container span{
     display: inline-block;
     vertical-align: middle;
     position: relative;
-    right: -5vw;
+    right: -2vw;
 }
 .container a{
     text-decoration: none;
@@ -1168,23 +1168,25 @@ header{
   * header styles
   * --------------------------------------------------------------- 
   */
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1000px) {
     .logo img{
-        padding-bottom: 18px;
+        padding-bottom: 15px;
+        width: 60px;
+        /* height: 60px; */
     }
     .menus {
         display: none;
     }
-    .menus1 {
+    .navbar-nav {
         display: inline-block;
         list-style: none;
         text-align:center;
-        padding: 5px;
+        /* padding: 5px;
         border-radius: 10px;
-        width: 15%;
+        width: 15%; */
         margin-left: 20vw;
     }
-    .menus1 .menu1 {
+    .navbar-nav li {
         position: relative; /* Add this to position the dropdown menu */
     }
     .menu1 p{
@@ -1231,6 +1233,68 @@ header{
     }
 }
  
+
+/* test */
+
+@media (max-width: 768px) {
+    .menus, .navbar {
+        flex: 1 0 100%;
+    }
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-nav li {
+        margin: 10px 0;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #000;
+    }
+}
+
+/* Media query for 650px */
+@media (max-width: 650px) {
+    .menus li {
+        margin: 0 5px;
+    }
+}
+
+/* Media query for 500px */
+@media (max-width: 500px) {
+    .menus {
+        flex-direction: column;
+    }
+
+    .navbar-toggler-icon {
+        background-color: #000;
+    }
+}
+
+/* Media query for 375px */
+@media (max-width: 375px) {
+    .navbar-toggler-icon {
+        background-color: #000;
+    }
+}
+
+@media (max-width: 480px){
+    .myname{
+        display: none;
+    }
+}
+
+/* /test */
  
  /** 
   * ===================================================================
